@@ -8,7 +8,6 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>login</h1>
       <Login backendurl={backendurl} />
     </div>
   );

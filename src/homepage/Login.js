@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Login.css"
 
 const Login = (props) => {
 
@@ -54,24 +55,34 @@ const Login = (props) => {
 
   return (
     <>
-      <div id="login-window">
+      <div id="page">
+        <div id="login-window">
 
-        <div id="user-name">
-          <textarea id="user-name-input"
-            placeHolder="username"
-            onChange={event => setUserName(event.target.value)}
-          ></textarea>
+          <div id="greencat"></div>
+
+          <h1 id="applecat">AppleCat.</h1>
+
+          <div id="user-name">
+            <textarea id="user-name-input"
+              placeHolder="username"
+              onChange={event => setUserName(event.target.value)}
+            ></textarea>
+          </div>
+          <br></br>
+          <div id="user-password">
+            <textarea id="user-password-input"
+              placeHolder="password"
+              onChange={event => setUserPassword(event.target.value)}
+            ></textarea>
+          </div>
+          <br></br>
+          <div id="login-button">
+            <p id="login-button-label" onClick={handleLoginClick}>Log In</p>
+          </div>
+          <br></br>
+          <p id="or">- or - </p>
+          <p id="create-account" onClick={handleSignupClick}>New User? Sign Up</p>
         </div>
-
-        <div id="user-password">
-          <textarea id="user-password-input"
-            placeHolder="password"
-            onChange={event => setUserPassword(event.target.value)}
-          ></textarea>
-        </div>
-
-        <button id="login-button" onClick={handleLoginClick}>Log In</button>
-        <button id="create-account" onCLick={handleSignupClick}>Sign Up</button>
       </div>
     </>
   )
