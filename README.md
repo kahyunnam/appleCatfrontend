@@ -2,4 +2,4 @@
 
 ## UI screenshots
 ### Login Page
-<img src = "/screenshots/login_demo.png" height="300">
+<img src = "/screenshots/login_demo.png" height="500">
