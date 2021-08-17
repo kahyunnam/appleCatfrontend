@@ -21,11 +21,26 @@
   background-size: 150px;
 }
 
+
 #applecat{
   color:#BCC595;
   padding:0;
   margin-top: 0;
   margin-bottom: 60px;
+}
+
+#applecatNOSPACE{
+  color:#BCC595;
+  padding:0;
+  margin-top: 0;
+}
+
+#applecatSMOL{
+  color:#BCC595;
+  padding:0;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 20px;
 }
 
 button{
@@ -55,13 +70,13 @@ button{
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 #login-button{
   position: relative;
   width: 128px;
-  height: 40px;
+  height: 30px;
 
   display: flex;
   flex-direction: column;
@@ -77,7 +92,7 @@ button{
 }
 
 #login-button:hover {
-  height: 45px;
+  height: 35px;
   width: 140px;
 }
 
@@ -87,7 +102,7 @@ button{
   color:#BCC595;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #login-window{
@@ -95,7 +110,7 @@ button{
   width: 80%;
   max-width: 800px;
   height: 70vh;
-  min-height: 670px;
+  min-height: 500px;
   /* margin:0 auto;
   text-align: center; */
 
@@ -114,7 +129,7 @@ button{
   position: relative;
   width: 30%;
   min-width: 150px;
-  height: 44px;
+  height: 35px;
   margin: 0 auto;
 
   background: #F4F5ED;
@@ -132,7 +147,7 @@ textarea{
   color: #BCC595;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
 
   position: relative;
   margin: 0 auto;
