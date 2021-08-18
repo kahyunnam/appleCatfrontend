@@ -1,8 +1,10 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import Login from './Login/Login.js'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import CreateAccount from './CreateAccount/CreateAccount.js'
+import Login from './Login/Login.js';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import CreateAccount from './CreateAccount/CreateAccount.js';
+import DashboardMain from './Dashboard/DashboardMain.js';
+import AppleCations from './Applecations/Applecations.js';
 
 function App(props) {
   const { backendurl } = props;
@@ -12,9 +14,19 @@ function App(props) {
 
       <Router>
         <Switch>
+
+          <Route path="/dashboard/applecations">
+            < AppleCations />
+          </Route>
+
+          <Route path="/dashboard">
+            <DashboardMain backendurl={backendurl} />
+          </Route>
+
           <Route path="/createaccount">
             <CreateAccount backendurl={backendurl} />
-          </Route>
+          </Route>b
+
           <Route path="/">
             <Login backendurl={backendurl} />
           </Route>

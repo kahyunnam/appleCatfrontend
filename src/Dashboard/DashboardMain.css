@@ -1,0 +1,90 @@
+#page1{
+  width: 100%;
+  height: 100vh;
+  min-height: 560px;
+  overflow-y:scroll;
+  position: relative;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; */
+
+  background-color:#F4F5ED;
+  display: block;
+}
+
+#bar{
+  height: 100vh;
+  width: 30%;
+  background-color: white;
+
+  float: left;
+  position: relative;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#bar-items{
+  width: 80%;
+  height: auto;
+  padding-left: 15%;
+  text-align: left;
+}
+
+h1{
+  padding: 3px;
+}
+
+#bar-text{
+  color: #3D441F;
+  text-decoration: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight:lighter;
+  font-size: 17px;
+  padding-bottom: 45px;
+  cursor:pointer;
+}
+
+#bar-text-current{
+  color: #3D441F;
+  text-decoration: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight:bolder;
+  font-size: 20px;
+  padding-bottom: 45px;
+  cursor:pointer;
+}
+
+#bar-text:hover{
+  transition: ease-in-out 0.25s;
+  font-size:20px;
+  font-weight: normal;
+}
+
+#dashboard{
+  height: 100vh;
+  width: 70%;
+
+  float: left;
+  position: relative;
+}
+
+#logo{
+  /* width: 40%;
+height: 15%; */
+width: 180px;
+height: 50px;
+padding-bottom: 30%;
+
+/* background-image: url(greencat.png);
+background-size: contain;
+background-repeat:no-repeat; */
+
+background: url(logo.png) no-repeat top;
+background-size: 200px;
+}

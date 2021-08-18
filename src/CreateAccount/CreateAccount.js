@@ -51,7 +51,10 @@ const CreateAccount = (props) => {
   }
 
   if (accountCreated) {
-    <DashboardWelcome />
+    console.log("sucess! account created")
+    return (
+      <DashboardWelcome accessKey={accessKey} userName={userName} />
+    )
   }
   if (notValid > 1) {
     return (
@@ -63,17 +66,17 @@ const CreateAccount = (props) => {
             <h1 id="applecatSMOL">Username is taken! Try another one.</h1>
 
             <div id="user-name">
-              <textarea id="user-name-input"
+              <input id="user-name-input"
                 placeHolder="username"
                 onChange={event => setUserName(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="user-password">
-              <textarea id="user-password-input"
+              <input id="user-password-input"
                 placeHolder="password"
                 onChange={event => setUserPassword(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="login-button">
@@ -94,17 +97,17 @@ const CreateAccount = (props) => {
             <h1 id="applecat">Create your account.</h1>
 
             <div id="user-name">
-              <textarea id="user-name-input"
+              <input id="user-name-input"
                 placeHolder="username"
                 onChange={event => setUserName(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="user-password">
-              <textarea id="user-password-input"
+              <input id="user-password-input"
                 placeHolder="password"
                 onChange={event => setUserPassword(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="login-button">

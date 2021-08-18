@@ -66,17 +66,17 @@ const Login = (props) => {
             <h1 id="applecatSMOL">Oops! Wrong username/password</h1>
 
             <div id="user-name">
-              <textarea id="user-name-input"
+              <input id="user-name-input"
                 placeHolder="username"
                 onChange={event => setUserName(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="user-password">
-              <textarea id="user-password-input"
+              <input id="user-password-input"
                 placeHolder="password"
                 onChange={event => setUserPassword(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="login-button">
@@ -92,9 +92,8 @@ const Login = (props) => {
     )
   }
   if (loggedIn) {
-    console.log("now going to dashboard")
     return (
-      <DashboardWelcome />
+      <DashboardWelcome accessKey={accessKey} userName={userName} />
     )
   }
   else {
@@ -109,17 +108,17 @@ const Login = (props) => {
             <h1 id="applecat">AppleCat.</h1>
 
             <div id="user-name">
-              <textarea id="user-name-input"
+              <input id="user-name-input"
                 placeHolder="username"
                 onChange={event => setUserName(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="user-password">
-              <textarea id="user-password-input"
+              <input id="user-password-input"
                 placeHolder="password"
                 onChange={event => setUserPassword(event.target.value)}
-              ></textarea>
+              ></input>
             </div>
             <br></br>
             <div id="login-button">
