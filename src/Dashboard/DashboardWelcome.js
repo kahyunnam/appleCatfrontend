@@ -16,7 +16,7 @@ const DashboardWelcome = (props) => {
           <div id="updates">
             <p id="updates-text">Some updates for you:</p>
             <p id="updates-text">
-              The applications sections is now live!
+              The apple-cations sections is now live!
             </p>
             <p id="updates-text">
               Other features coming soon: analytics, profile, streaks, achievements, and tiers.

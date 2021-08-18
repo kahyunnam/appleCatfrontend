@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import "./DashboardMain.css";
+import WindowProfile from "./DashboardWindows/windowProfile.js"
+import WindowAnalytics from "./DashboardWindows/windowAnalytics.js"
 
 const DashboardMain = () => {
 
@@ -29,6 +31,25 @@ const DashboardMain = () => {
           </div>
         </div>
         <div id="dashboard">
+          <div id="top-part">
+            <div id="top-left">
+              <div id="topleftwindow">
+                <WindowProfile userName={userName} />
+              </div>
+            </div>
+            <div id="top-right">
+              <div id="toprightwindow">
+                <WindowAnalytics />
+              </div>
+            </div>
+          </div>
+          <div id="bottom-part">
+            <div id="bottom-content">
+              <div id="bottom-window">
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
