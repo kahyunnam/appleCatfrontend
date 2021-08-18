@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import CreateAccount from './CreateAccount/CreateAccount.js';
 import DashboardMain from './Dashboard/DashboardMain.js';
 import AppleCations from './Applecations/Applecations.js';
+import Analytics from './Analytics/Analytics.js';
+import Profile from './Profile/Profile.js';
 
 function App(props) {
   const { backendurl } = props;
@@ -14,6 +16,13 @@ function App(props) {
 
       <Router>
         <Switch>
+          <Route path="/dashboard/profile">
+            < Profile />
+          </Route>
+
+          <Route path="/dashboard/analytics">
+            < Analytics />
+          </Route>
 
           <Route path="/dashboard/applecations">
             < AppleCations />

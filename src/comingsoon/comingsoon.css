@@ -1,0 +1,27 @@
+#cs1{
+  padding: 30%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#cs1logo{
+  width: 166px;
+  height: 175px;
+
+  background: url(greencat.png) no-repeat top;
+  background-size: 200px;
+
+  padding-bottom: 20px;
+}
+
+#message{
+  font-family: ABeeZee;
+  color:#BCC595;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
