@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const Create = styled.aside`
   position: fixed;
-  width: 69%;
   z-index: 100;
+  width: 60%;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.5);
+  min-height: 600px;
+  overflow:auto;
+  // background: rgba(255, 255, 255, 0.5);
 
   align-items: center;
   display: flex;
@@ -14,7 +16,8 @@ export const Create = styled.aside`
   align-items:center;
   text-align: center;
 
-  transition: 0.3s ease-in-out;
+  transition: 2s ease-in-out;
+
   opacity: ${({ openCreate }) => (openCreate ? '100%' : '0')};
   top: ${({ openCreate }) => (openCreate ? '0' : '-100%')};
 `;

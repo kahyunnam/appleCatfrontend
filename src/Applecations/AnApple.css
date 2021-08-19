@@ -1,0 +1,84 @@
+#anapple-out{
+  clear: both;
+  
+  background: linear-gradient(269.91deg, rgba(188, 197, 149, 0.5) 23.73%, rgba(255, 205, 177, 0.3) 98.33%);
+  border-radius: 30px;
+  position: relative;
+
+  width: 90%;
+  min-height: 200px;
+
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+
+  margin-bottom: 10px;
+
+}
+
+#white-box{
+  border-radius: 30px;
+  background: white;
+  float: left;
+  margin: 20px;
+  height: 180px;
+  width: 190px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center; 
+  text-align: center; 
+}
+
+#side{
+  width: 55%;
+  height: 140px;
+  float: right;
+  padding-top:40px;
+  padding-bottom: 40px;
+  padding-right: 2%;
+  text-align: left;
+}
+
+#yellow-apple{
+  width: 50px;
+  height: 50px;
+  background: url(red-apple.png) no-repeat top;
+  background-size: 50px;
+
+  padding-bottom: 10px;
+}
+
+p{
+  padding:none;
+  margin: 0;
+  padding-bottom: 3px;
+}
+
+#company{
+  font-weight: bolder;
+}
+
+#pending{
+  background-color: #F0D794;
+  border-radius: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#label2{
+  font-weight: bold;
+}
+
+#status{
+  margin-bottom: 20px;
+}
+
+#date, #location{
+  color: #5E663B;
+}

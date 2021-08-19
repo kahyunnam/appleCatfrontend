@@ -1,8 +1,11 @@
 #page1{
+
+  overflow: auto;
+
   width: 100%;
+  min-width: 730px;
   height: 100vh;
   min-height: 560px;
-  overflow-y:scroll;
   position: relative;
 
   /* display: flex;
@@ -14,13 +17,27 @@
   display: block;
 }
 
+#page2{
+  overflow: auto;
+  height: 100vh;
+
+  width: 100%;
+  min-width: 750px;
+  min-height: 560px;
+  position: relative;
+
+  background-color:#F4F5ED;
+  display: block;
+}
+
 #bar{
   height: 100vh;
   width: 30%;
+  min-width: 220px;
   background-color: white;
 
   float: left;
-  position: relative;
+  position: fixed;
 
   justify-content: center;
   display: flex;
@@ -67,10 +84,10 @@ h1{
 }
 
 #dashboard{
-  height: 100vh;
+
   width: 70%;
 
-  float: left;
+  float: right;
 
 
   display: flex;

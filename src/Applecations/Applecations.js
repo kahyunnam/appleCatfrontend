@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import AnApple from './AnApple.js'
 
 //my styling
 import "../Dashboard/DashboardMain.css";
@@ -171,6 +172,7 @@ const Applecations = (props) => {
               <div id="i">
                 <input id="company-input"
                   placeHolder="company"
+                  autoComplete="off"
                   onChange={event => setCompany(event.target.value)}
                 ></input>
               </div>
@@ -178,6 +180,7 @@ const Applecations = (props) => {
               <div id="i">
                 <input id="jobTitle-input"
                   placeHolder="position title"
+                  autoComplete="off"
                   onChange={event => setjobTitle(event.target.value)}
                 ></input>
               </div>
@@ -185,6 +188,7 @@ const Applecations = (props) => {
               <div id="i">
                 <input id="location-input"
                   placeHolder="location"
+                  autoComplete="off"
                   onChange={event => setLocation(event.target.value)}
                 ></input>
               </div>
@@ -241,11 +245,31 @@ const Applecations = (props) => {
 
   const ApplesList = () => {
 
+    const [aplist, setAplist] = useState([])
+    const apiurl = `${backendurl}/AllApples/${accessKey}`;
+
+    useEffect(() => {
+      const requestInfo = {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json;charset=utf-8' },
+      }
+
+      fetch(apiurl, requestInfo).then(response => response.json())
+        .then(json => {
+          console.log(json)
+          setAplist(json);
+        })
+
+    }, [])
+
+    return (
+      aplist.reverse().map(AnApple)
+    )
   }
 
   return (
     <>
-      <div id="page1">
+      <div id="page2">
         <div id="bar">
           <div id="bar-items">
             <div id="logo"></div>
@@ -259,6 +283,7 @@ const Applecations = (props) => {
         </div>
         <div id="dashboard">
           <CreateNew />
+          <ApplesList />
         </div>
       </div>
     </>
