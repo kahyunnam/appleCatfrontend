@@ -71,11 +71,13 @@ h1{
   width: 70%;
 
   float: left;
-  position: relative;
 
-  justify-content: center;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
 }
 
 #logo{
@@ -159,6 +161,7 @@ background-size: 200px;
   height: 50vh;
   float: center;
   border-radius: 20px;
+
 }
 
 #toprightwindow{

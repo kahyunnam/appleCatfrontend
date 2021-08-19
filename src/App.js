@@ -25,7 +25,7 @@ function App(props) {
           </Route>
 
           <Route path="/dashboard/applecations">
-            < AppleCations />
+            < AppleCations backendurl={backendurl} />
           </Route>
 
           <Route path="/dashboard">
